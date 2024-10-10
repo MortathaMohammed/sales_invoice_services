@@ -25,14 +25,12 @@ To use these scripts, follow these steps:
 4. Event Hook
 
 Add the event hook in your app's hooks.py file to trigger the appropriate function after a document is submitted.
-
     Open hooks.py:
         File path: ~/frappe-bench/apps/custom_app/custom_app/hooks.py
-
     Add the Following Entry:
-
     python
 
+```
 doc_events = {
    "Lab Test": {
         "on_submit": "custom_app.custom_app.sales_invoice_services.create_sales_invoice_for_lab_test"
@@ -44,8 +42,8 @@ doc_events = {
         "on_submit": "custom_app.custom_app.sales_invoice_services.create_sales_invoice_for_procedure"
         },
 }
-
-    Ensure that the module path matches your app's structure.
+```
+ Ensure that the module path matches your app's structure.
 ## Usage
 
 These functions are designed to be called during specific document events in the Frappe framework (e.g., on_submit, validate). They automatically append services to an existing Sales Invoice based on the patient.
