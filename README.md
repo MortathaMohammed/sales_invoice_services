@@ -109,13 +109,6 @@ def get_medication_item_details(doc):
 def get_procedure_item_details(doc):
     return doc.procedure_name, doc.item_code, doc.rate
 ```
-
-- Fetches the procedure service name, item code, and rate from the procedure document.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ---
 
 This documentation outlines the repository’s functionality and explains how to use each function and helper function in your code.
