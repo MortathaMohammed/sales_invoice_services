@@ -1,7 +1,3 @@
-Here’s a documentation template you can use for your GitHub repository:
-
----
-
 # Automated Sales Invoice Creation for Lab Tests, Medications, and Procedures in Frappe
 
 This repository provides scripts to automate the creation of sales invoices for lab tests, medications, and clinical procedures within the Frappe framework. It dynamically fetches the relevant item details (e.g., item code, rate) and appends them to an existing draft Sales Invoice for the patient.
